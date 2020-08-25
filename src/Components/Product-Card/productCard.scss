@@ -1,0 +1,33 @@
+@import "../../assets/styles/functions";
+@import "../../assets/styles/variables";
+@import "../../assets/styles/mixins";
+
+.productCard {
+  &Wrapper {
+    border: 1px solid $grey;
+    display: flex;
+    flex-direction: column;
+    margin: units(10px 15px 20px);
+    width: 25%;
+    padding: units(20px);
+    text-align: center;
+  }
+
+  &Image {
+    font-family: "object-fit: contain; object-position: top;";
+    height: units(185px);
+    object-fit: contain;
+    object-position: top;
+    width: 100%;
+  }
+
+  &Title {
+    font-size: units(22px);
+    margin-bottom: units(10px);
+  }
+
+  &Price {
+    font-size: units(18px);
+    margin: units(0);
+  }
+}
