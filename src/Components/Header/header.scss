@@ -1,12 +1,22 @@
-@import "../../assets/styles/variables";
 @import "../../assets/styles/functions";
+@import "../../assets/styles/mixins";
 
 .header {
-  padding: units(20px 64px);
+  padding: units(20px 16px);
 
   &__image {
-    max-width: 200px;
+    cursor: pointer;
+    font-family: "object-fit: contain;";
     height: auto;
+    max-width: units(150px);
     object-fit: contain;
+  }
+
+  @include medium {
+    padding: units(20px 32px);
+  }
+
+  @include large {
+    padding: units(20px 64px);
   }
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// components
 import ProductCard from "../Product-Card/ProductCard";
 
 import styles from "./productCollection.scss";
@@ -24,11 +25,11 @@ const ProductCollection = () => {
   }, []);
 
   return (
-    <div className={styles.productCollection}>
+    <section className={styles.productCollection}>
       {product.map(item => (
         <ProductCard key={item.id} item={item} />
       ))}
-    </div>
+    </section>
   );
 };
 

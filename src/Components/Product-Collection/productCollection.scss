@@ -1,9 +1,8 @@
 @import "../../assets/styles/functions";
-@import "../../assets/styles/variables";
-@import "../../assets/styles/mixins";
 
 .productCollection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: units(20px 10px);
 }

@@ -3,31 +3,118 @@
 @import "../../assets/styles/mixins";
 
 .productCard {
-  &Wrapper {
-    border: 1px solid $grey;
-    display: flex;
-    flex-direction: column;
-    margin: units(10px 15px 20px);
-    width: 25%;
-    padding: units(20px);
-    text-align: center;
+  border: 1px solid $grey;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: units(10px 15px 20px);
+  overflow: hidden;
+  padding: units(15px);
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  &__wrapper {
+    position: relative;
+    height: units(150px);
   }
 
-  &Image {
-    font-family: "object-fit: contain; object-position: top;";
-    height: units(185px);
+  &__image {
+    font-family: "object-fit: contain; object-position: center;";
+    height: units(150px);
     object-fit: contain;
-    object-position: top;
+    object-position: center;
     width: 100%;
   }
 
-  &Title {
-    font-size: units(22px);
+  &__quantity {
+    background: $green;
+    bottom: 0;
+    color: $white;
+    font-size: units(18px);
+    font-weight: bold;
+    letter-spacing: units(1px);
+    padding: units(0 5px);
+    position: absolute;
+    right: 0;
+    width: auto;
+  }
+
+  &__title {
+    font-size: units(16px);
     margin-bottom: units(10px);
   }
 
-  &Price {
-    font-size: units(18px);
-    margin: units(0);
+  &__price {
+    bottom: 0;
+    margin: 5px auto 0;
+    position: relative;
+    width: calc(95% - 20px);
+  }
+
+  &__retailPrice {
+    font-size: units(16px);
+    text-decoration: line-through;
+  }
+
+  &__salePrice {
+    font-size: units(20px);
+    font-weight: bold;
+  }
+
+  // tablet
+  @include medium {
+    height: units(320px);
+    width: 20%;
+
+    &__title {
+      font-size: units(18px);
+    }
+
+    &__price {
+      position: absolute;
+      bottom: 20px;
+    }
+
+    &__retailPrice {
+      font-size: units(18px);
+    }
+
+    &__salePrice {
+      font-size: units(22px);
+    }
+  }
+
+  // desktop
+  @include large {
+    height: units(355px);
+    padding: units(20px);
+    width: 18%;
+
+    &__wrapper {
+      height: units(175px);
+      margin-bottom: units(15px);
+    }
+
+    &__image {
+      height: units(175px);
+    }
+
+    &__title {
+      font-size: units(20px);
+    }
+
+    &__price {
+      position: absolute;
+      bottom: 20px;
+    }
+
+    &__retailPrice {
+      font-size: units(20px);
+    }
+
+    &__salePrice {
+      font-size: units(24px);
+    }
   }
 }
