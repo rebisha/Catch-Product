@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 // components
 import ProductCard from "../Product-Card/ProductCard";
+import Select from "../Select/Select";
 
 import styles from "./productCollection.scss";
 
 const ProductCollection = () => {
   const [product, setProduct] = useState([]);
+  const [sortProduct, setSortProduct] = useState("asc");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,11 +26,23 @@ const ProductCollection = () => {
     fetchData();
   }, []);
 
+  const handleChange = e => {
+    if (e.target.value === "lowest") {
+      setProduct(product.sort((a, b) => a.salePrice - b.salePrice));
+      setSortProduct("asc");
+    } else if (e.target.value === "highest") {
+      setProduct(product.sort((a, b) => b.salePrice - a.salePrice));
+      setSortProduct("desc");
+    }
+  };
+
   return (
     <section className={styles.productCollection}>
-      {product.map(item => (
-        <ProductCard key={item.id} item={item} />
-      ))}
+      <Select onChange={handleChange} />
+      <div className={styles.productCollection__products}>
+        {sortProduct &&
+          product.map(item => <ProductCard key={item.id} item={item} />)}
+      </div>
     </section>
   );
 };

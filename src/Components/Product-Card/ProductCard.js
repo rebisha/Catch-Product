@@ -8,7 +8,11 @@ const ProductCard = ({ item }) => {
   return (
     <div className={styles.productCard}>
       <div className={styles.productCard__wrapper}>
-        <img className={styles.productCard__image} src={imageUrl} alt="image" />
+        <img
+          className={styles.productCard__image}
+          src={imageUrl}
+          alt="product__image"
+        />
         {quantityAvailable === 0 && (
           <span className={styles.productCard__quantity}>Sold out</span>
         )}

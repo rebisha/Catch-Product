@@ -2,7 +2,7 @@
 @import "../../assets/styles/mixins";
 
 .header {
-  padding: units(20px 16px);
+  padding: units(20px 16px 0);
 
   &__image {
     cursor: pointer;
@@ -13,10 +13,10 @@
   }
 
   @include medium {
-    padding: units(20px 32px);
+    padding: units(20px 32px 0);
   }
 
   @include large {
-    padding: units(20px 64px);
+    padding: units(20px 64px 0);
   }
 }

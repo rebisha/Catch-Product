@@ -70,5 +70,6 @@ module.exports = {
     contentBase: "./dist",
     port: 8080,
     historyApiFallback: true,
+    disableHostCheck: true,
   },
 };

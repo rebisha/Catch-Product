@@ -1,0 +1,11 @@
+@import "../../assets/styles/functions";
+
+.select {
+  display: flex;
+  justify-content: flex-end;
+  height: units(35px);
+
+  &__select {
+    width: auto;
+  }
+}
