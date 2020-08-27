@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should dispaly sold-out for zero quantity availability 1`] = `
+<div
+  className="productCard"
+>
+  <div
+    className="productCard__wrapper"
+  >
+    <img
+      alt="product__image"
+      className="productCard__image"
+      src="https://s.catch.com.au/images/product/0002/2114/593f690189ac9183721654_w200.jpg"
+    />
+    <span
+      className="productCard__quantity"
+    >
+      Sold out
+    </span>
+  </div>
+  <h3
+    className="productCard__title"
+  >
+     
+    Buy Olaplex No. 3 Hair Perfector
+  </h3>
+  <div
+    className="productCard__price"
+  >
+    <p
+      className="productCard__retailPrice"
+    >
+      $
+      50
+    </p>
+    <p
+      className="productCard__salePrice"
+    >
+       $
+      31.45
+       
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Should render correctly 1`] = `
+<div
+  className="productCard"
+>
+  <div
+    className="productCard__wrapper"
+  >
+    <img
+      alt="product__image"
+      className="productCard__image"
+      src="https://s.catch.com.au/images/product/0002/2114/593f690189ac9183721654_w200.jpg"
+    />
+  </div>
+  <h3
+    className="productCard__title"
+  >
+     
+    Buy Olaplex No. 3 Hair Perfector
+  </h3>
+  <div
+    className="productCard__price"
+  >
+    <p
+      className="productCard__retailPrice"
+    >
+      $
+      50
+    </p>
+    <p
+      className="productCard__salePrice"
+    >
+       $
+      31.45
+       
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+<header
+  className="header"
+>
+  <a
+    href="https://www.catch.com.au/"
+    rel="noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="logo"
+      className="header__image"
+      src="https://s.catch.com.au/static/catch/images/logo-83d9b21199.svg"
+    />
+  </a>
+</header>
+`;

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+<div
+  className="productCollection"
+>
+  <div
+    className="productCard"
+  >
+    <div
+      className="productCard__wrapper"
+    >
+      <img
+        alt="product__image"
+        className="productCard__image"
+        src="https://s.catch.com.au/images/product/0002/2114/593f690189ac9183721654_w200.jpg"
+      />
+    </div>
+    <h3
+      className="productCard__title"
+    >
+       
+      Buy Olaplex No. 3 Hair Perfector
+    </h3>
+    <div
+      className="productCard__price"
+    >
+      <p
+        className="productCard__retailPrice"
+      >
+        $
+        50
+      </p>
+      <p
+        className="productCard__salePrice"
+      >
+         $
+        31.45
+         
+      </p>
+    </div>
+  </div>
+  <div
+    className="productCard"
+  >
+    <div
+      className="productCard__wrapper"
+    >
+      <img
+        alt="product__image"
+        className="productCard__image"
+        src="https://s.catch.com.au/images/product/0001/1909/5d47c0d64988e613254534_w200.jpg"
+      />
+    </div>
+    <h3
+      className="productCard__title"
+    >
+       
+      4 x 60pk Finish Quantum Max Powerball Super Charged Dishwashing Caps Lemon Sparkle
+    </h3>
+    <div
+      className="productCard__price"
+    >
+      <p
+        className="productCard__retailPrice"
+      >
+        $
+        184.17
+      </p>
+      <p
+        className="productCard__salePrice"
+      >
+         $
+        59
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;

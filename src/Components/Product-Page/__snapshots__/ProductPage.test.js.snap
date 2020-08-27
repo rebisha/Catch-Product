@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+<section
+  className="productPage"
+>
+  <div
+    className="select"
+  >
+    <select
+      className="select__select"
+      id="sorting"
+      name="sorting"
+      onChange={[Function]}
+    >
+      <option
+        value=""
+      >
+        Sort by price
+      </option>
+      <option
+        value="highest"
+      >
+        Highest Price
+      </option>
+      <option
+        value="lowest"
+      >
+        Lowest Price
+      </option>
+    </select>
+  </div>
+  <div
+    className="productCollection"
+  />
+</section>
+`;
