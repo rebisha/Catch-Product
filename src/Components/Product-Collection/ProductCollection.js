@@ -7,11 +7,11 @@ import styles from "./productCollection.scss";
 
 const ProductCollection = ({ products }) => {
   return (
-    <div className={styles.productCollection}>
+    <section className={styles.productCollection}>
       {products.map(item => (
         <ProductCard key={item.id} item={item} />
       ))}
-    </div>
+    </section>
   );
 };
 
