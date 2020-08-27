@@ -8,6 +8,7 @@ const Select = ({ onChange }) => {
     <div className={styles.select}>
       <select
         name="sorting"
+        id="sorting"
         className={styles.select__select}
         onChange={onChange}
       >

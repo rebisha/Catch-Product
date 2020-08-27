@@ -1,0 +1,8 @@
+@import "../../assets/styles/functions";
+
+.productPage {
+  display: flex;
+  flex-direction: column;
+  margin: units(0 10px 20px);
+  padding: units(0 20px);
+}
