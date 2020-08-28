@@ -30,7 +30,7 @@ exports[`Should render correctly 1`] = `
       </option>
     </select>
   </div>
-  <div
+  <section
     className="productCollection"
   />
 </section>
